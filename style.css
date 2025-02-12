@@ -49,6 +49,67 @@ body {
   0% { opacity: 0; transform: translateY(-20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+.scroll-indicator {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  animation: float 2s infinite ease-in-out;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -10px);
+  }
+}
+html {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: black #f1f1f1; /* Thumb and track color */
+}
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black; /* Bubble color */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1; /* Creates the bubble effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black /* Darker bubble color on hover */
+}
+
+.scroll-indicator1 {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  animation: float 2s infinite ease-in-out;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -10px);
+  }
+}
 nav {
   font-family:"Exo 2";
   display: flex;
@@ -60,7 +121,6 @@ nav {
   top: 0;
   z-index: 1000;
 }
-
 nav .logo {
   font-family:"Orbitron";
   color: black;
@@ -89,8 +149,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
   border-radius: 5px;
 }
 
@@ -139,7 +199,7 @@ nav ul li a:hover {
 .hero-image img {
   max-width: 70%;
   height: auto;
-  animation: float 3s ease-in-out infinite;
+  animation: float 1.5s ease-in-out infinite;
 }
 
 
@@ -152,13 +212,8 @@ nav ul li a:hover {
   }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    padding: 10px;
-    position: fixed;
-  }
   nav {
     flex-direction: column;
     padding: 10px;
@@ -226,7 +281,7 @@ nav ul li a:hover {
 
   .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
     padding: 20px;
   }
@@ -435,7 +490,7 @@ nav ul li a:hover {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
   }
 
