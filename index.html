@@ -12,41 +12,32 @@
   <title>Bionic Prosthetic Arm</title>
 </head>
 <body>
-  <div class="loader">
-    <div class="bionix-loader">
-      <span>B</span>
-      <span>I</span>
-      <span>O</span>
-      <span>N</span>
-      <span>I</span>
-      <span>X</span>
-    </div>
-  </div>
+ 
 
   <nav>
       <div class="logo">Bionix</div>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#features">Features</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
  
   
   <section class="hero" id="home">
-    <div class="scroll-indicator">
+    <div class="scroll-indicator" id="scroll-arrow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="21">
         <path d="M12 2a1 1 0 0 1 1 1v14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 1.414-1.414L11 17.586V3a1 1 0 0 1 1-1z" fill="black"/>
       </svg>
     </div>
     <div class="hero-text">
-      <h1 data-aos="fade-right" data-aos-delay="200">Revolutionizing Prosthetics with Advanced Bionic Technology</h1>
-      <p>Experience the future of mobility with our state-of-the-art bionic prosthetic arm.</p>
+      <h1 class="hero-headline">Revolutionizing Prosthetics with Advanced Bionic Technology</h1>
+      <p class="hero-subtitle">Experience the future of mobility with our state-of-the-art bionic prosthetic arm.</p>
       <button>Explore Features</button>
     </div>
     <div class="hero-image">
-      <img src="bionic.png" alt="Bionic Prosthetic Arm" data-aos="fade-down" data-aos-delay="200">
+      <img src="bionic.png" alt="Bionic Prosthetic Arm" width="550px" style="padding-bottom: 190px;">
     </div>
   </section>
 
@@ -64,25 +55,25 @@
         <div class="feature-icon">
           <img src="hand-grip.png" width="70px">
         </div> 
-        <h3 data-aos="fade-down" data-aos-delay="200">Precision Gripping Technology</h3>
+        <h3 >Precision Gripping Technology</h3>
         <p>AI-powered grip control for delicate and heavy objects.</p>
       </div>
     
       <div class="feature-card">
         <div class="feature-icon"><img src="feather.png" width="70px"></div>
-        <h3 data-aos="fade-down" data-aos-delay="200">Lightweight Carbon Fiber</h3>
+        <h3 >Lightweight Carbon Fiber</h3>
         <p>Durable and comfortable for all-day use.</p>
       </div>
    
       <div class="feature-card">
         <div class="feature-icon"><img src="brain.png" width="70px"></div>
-        <h3 data-aos="fade-down" data-aos-delay="200">Neuromuscular Integration</h3>
+        <h3 >Neuromuscular Integration</h3>
         <p>Seamless connection with muscle signals.</p>
       </div>
      
       <div class="feature-card">
         <div class="feature-icon"><img src="settings.png" width="70px"></div>
-        <h3 data-aos="fade-down" data-aos-delay="200">Customizable Aesthetics</h3>
+        <h3 >Customizable Aesthetics</h3>
         <p>Personalize the arm’s appearance.</p>
       </div>
     </div>
@@ -91,31 +82,32 @@
 
 <section class="mission" id="mission">
   <div class="mission-container">
-    <div class="mission-text">
-      <h2 data-aos="fade-down" data-aos-delay="200">Democratizing Bionic Prosthetics in Nigeria</h2>
-      <p class="subtitle" data-aos="fade-down" data-aos-delay="200">No one should lose their independence due to cost.</p>
-      <p class="description"data-aos="fade-down" data-aos-delay="200">We design affordable, high-quality prosthetic arms for Nigerians, priced at just <span>₦850,000</span> — 80% cheaper than imported alternatives.</p>
+    <div class="scroll-section">
+      <h2 class="scroll-headline">Our Mission</h2>
+      <h2 class="scroll-text">Democratizing Bionic Prosthetics in Nigeria</h2>
+      <p class="scroll-text">No one should lose their independence due to cost.</p>
+      <p class="scroll-text">We design affordable, high-quality prosthetic arms for Nigerians, priced at just <span>₦850,000</span> — 80% cheaper than imported alternatives.</p>
       
       
       <div class="key-points">
         <div class="point">
           <div class="icon"><img src="factory (1).png" width="70px"></div>
-          <h3 data-aos="fade-down" data-aos-delay="200">Locally Manufactured</h3>
+          <h3 >Locally Manufactured</h3>
           <p>Built in Lagos using locally sourced materials.</p>
         </div>
         <div class="point">
           <div class="icon"><img src="handshake (1).png" width="70px"></div>
-          <h3 data-aos="fade-down" data-aos-delay="200">Community Partnerships</h3>
+          <h3 >Community Partnerships</h3>
           <p>Working with NGOs to reach rural areas.</p>
         </div>
         <div class="point">
           <div class="icon"><img src="innovation (1).png" width="70px"></div>
-          <h3 data-aos="fade-down" data-aos-delay="200">Innovative Cost-Saving</h3>
+          <h3 >Innovative Cost-Saving</h3>
           <p>3D-printed components & open-source designs.</p>
         </div>
       </div>
 
-      <button class="cta-button" data-aos="fade-down" data-aos-delay="200">Support Our Mission</button>
+      <button class="cta-button" >Support Our Mission</button>
     </div>
 
    
@@ -161,7 +153,7 @@
       <p>Empowering Nigerians with affordable prosthetics.</p>
       <p> Lagos, Nigeria</p><br>
       <p>contact@bionicarm.ng</p><br>
-      <p>+234 810 677 1807</p>
+      <p style="text-decoration: none; color: white;">+234 810 677 1807</p>
     </div>
 
    
@@ -204,36 +196,163 @@
         }, 300);
       }
     });
-  document.querySelector('.scroll-indicator').addEventListener('click', () => {
-    window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
-  });
+    document.querySelector('#scroll-arrow').addEventListener('click', () => {
+      const nextSection = document.querySelector('#features');
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  const scrollIndicator = document.querySelector('.scroll-indicator');
+  if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', () => {
+      window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+    });
+  }
   </script>
 <script>
-    document.querySelectorAll('nav ul li a').forEach(anchor => {
+  document.querySelectorAll('nav ul li a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const targetId = href.substring(1);
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+        // If the href doesn't start with '#', it will navigate normally (e.g., to about.html)
       });
     });
   </script>
   <script>
-    window.addEventListener('load', () => {
-  const loader = document.querySelector('.loader');
-  const minimumDuration = 2000; 
-  setTimeout(() => {
-    loader.style.opacity = '0';
-    setTimeout(() => {
-      loader.style.display = 'none';
-    }, 500); 
-  }, minimumDuration);
-});
+   document.querySelector('#scroll-arrow').addEventListener('click', () => {
+    const sections = document.querySelectorAll('section');
+    const currentScroll = window.scrollY;
+    let nextSection = null;
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      if (sectionTop > currentScroll + 1) { // Adding 1 to avoid floating point precision issues
+        nextSection = section;
+        return false; // Break the loop
+      }
+    });
+
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+
+  window.addEventListener('scroll', () => {
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (window.scrollY > 100) {
+      scrollIndicator.style.opacity = '0';
+      setTimeout(() => {
+        scrollIndicator.style.display = 'none';
+      }, 300);
+    } else {
+      scrollIndicator.style.opacity = '1';
+      scrollIndicator.style.display = 'block';
+    }
+  });
   </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
          AOS.init();
     </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+   <script>
+     
+   
+    
+   
+       // GSAP animation for the hero section
+      
+   
+       gsap.from('.hero-subtitle', {
+         scrollTrigger: {
+           trigger: '.hero',
+           start: 'top 70%',
+           toggleActions: 'play none none reset',
+         },
+         x: 100,
+         opacity: 0,
+         duration: 1,
+         delay: 0.5,
+         ease: 'power2.out',
+       });
+   
+       // Feature Cards Animation
+       gsap.from('.feature-card', {
+         scrollTrigger: {
+           trigger: '.feature-grid',
+           start: 'top 80%',
+           toggleActions: 'play none none reset',
+         },
+         y: 50,
+         opacity: 0,
+         duration: 0.8,
+         stagger: 0.3,
+         ease: 'back.out(1.7)',
+       });
+   
+       // Scroll-Triggered Animation
+       gsap.registerPlugin(ScrollTrigger);
+   
+       gsap.from('.scroll-headline', {
+         scrollTrigger: {
+           trigger: '.scroll-section',
+           start: 'top 80%',
+           toggleActions: 'play none none reset',
+         },
+         x: -100,
+         opacity: 0,
+         duration: 1,
+         ease: 'power2.out',
+       });
+   
+       gsap.from('.scroll-text', {
+         scrollTrigger: {
+           trigger: '.scroll-section',
+           start: 'top 70%',
+           toggleActions: 'play none none reset',
+         },
+         x: 100,
+         opacity: 0,
+         duration: 1,
+         delay: 0.5,
+         ease: 'power2.out',
+       });
+   
+       // Button Hover Animation
+       gsap.to('.cta-button', {
+         scale: 1.1,
+         duration: 0.3,
+         ease: 'power2.out',
+         paused: true,
+       });
+   
+       document.querySelector('.cta-button').addEventListener('mouseenter', () => {
+         gsap.to('.cta-button', { scale: 1.1, duration: 0.3 });
+       });
+   
+       document.querySelector('.cta-button').addEventListener('mouseleave', () => {
+         gsap.to('.cta-button', { scale: 1, duration: 0.3 });
+       });
+      // GSAP animation for the image transition between sections
+    gsap.to('.hero-img', {
+      scrollTrigger: {
+        trigger: '.features',
+        start: 'top bottom',
+        end: 'top top',
+        scrub: true,
+        toggleActions: 'play reverse play reverse',
+      },
+      y: () => document.querySelector('.features').getBoundingClientRect().top - document.querySelector('.hero').getBoundingClientRect().top,
+      ease: 'power2.out',
+    });
+  
+   </script>
 </body>
 </html>

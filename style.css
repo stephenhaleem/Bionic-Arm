@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .loader {
   position: fixed;
   top: 0;
@@ -116,7 +117,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: whitesmoke;
-  padding: 40px 50px;
+  padding: 20px 50px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -214,10 +215,15 @@ nav ul li a:hover {
 
 
 @media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
   nav {
     flex-direction: column;
     padding: 10px;
-    position: fixed;
+    position: flex-start;
   }
 
   nav ul {
@@ -225,7 +231,13 @@ nav ul li a:hover {
     padding-right: 10px;
   } 
  
+  .scroll-indicator {
+    display: none; /* Hide scroll indicator for smaller screens */
+  }
 
+  .hero-image img {
+    max-width: 90%; /* Reduce image size for smaller devices */
+  }
 
 
   .hero {
@@ -329,7 +341,7 @@ nav ul li a:hover {
     gap: 40px;
   }
 
-  .mission-text {
+  .scroll-section {
     flex: 1;
   }
 
@@ -390,12 +402,10 @@ nav ul li a:hover {
     border-radius: 9px;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    
   }
 
-  .cta-button:hover {
-    background-color: whitesmoke;
-  }
+  
 
   .mission-image {
     flex: 1;
