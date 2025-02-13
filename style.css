@@ -215,7 +215,6 @@ nav ul li a:hover {
 
 
 @media (max-width: 768px) {
-
   body {
     overflow-x: hidden;
     width: 100%;
@@ -262,10 +261,7 @@ nav ul li a:hover {
     padding: 10px 15px;
 
   }
-  .hero-image img {
-    max-width: 100%;
-    height: auto;
-  }
+
 }
   .hero-image {
     margin-top: 20px;
