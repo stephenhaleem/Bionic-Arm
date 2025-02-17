@@ -324,6 +324,11 @@ nav ul li a:hover {
     font-size: 1rem;
     opacity: 0.9;
   }
+.button-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
   .mission {
     padding: 80px 20px;
     background-color: black; 

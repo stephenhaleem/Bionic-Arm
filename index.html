@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -34,7 +37,7 @@
     <div class="hero-text">
       <h1 class="hero-headline">Revolutionizing Prosthetics with Advanced Bionic Technology</h1>
       <p class="hero-subtitle">Experience the future of mobility with our state-of-the-art bionic prosthetic arm.</p>
-      <button onclick="document.getElementById('features').scrollIntoView({ behavior: 'smooth' });">Explore Features</button>
+      <button class="cta-button" onclick="document.getElementById('features').scrollIntoView({ behavior: 'smooth' });">Explore Features</button>
     </div>
     <div class="hero-image">
       <img src="bionic.png" alt="Bionic Prosthetic Arm" width="550px" style="padding-bottom: 190px;">
@@ -78,6 +81,11 @@
       </div>
     </div>
   </div>
+  <div class="button-wrapper">
+<button class="cta-button" style="background-color:black">
+  <a href="features.html" style="color: rgb(255, 255, 255) !important; text-decoration: none; font-family: 'Inter';">Check out more</a>
+</button>
+</div>
 </section>
 
 <section class="mission" id="mission">
@@ -107,7 +115,7 @@
         </div>
       </div>
 
-      <button class="cta-button" >Support Our Mission</button>
+      <button class="cta-button"  onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });" >Support Our Mission</button>
     </div>
 
    
