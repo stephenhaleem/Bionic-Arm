@@ -16,12 +16,80 @@
             background-color: #f4f4f4;
             color: #333;
         }
+
+        html {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: black #f1f1f1; /* Thumb and track color */
+}
+        ::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black; /* Bubble color */
+  border-radius: 10px;
+  border: 3px solid #f1f1f1; /* Creates the bubble effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black /* Darker bubble color on hover */
+}
         header {
             background-color: #000000;
             color: white;
             text-align: center;
             padding: 20px 0;
         }
+
+        nav {
+  font-family:"Exo 2";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav .logo {
+  font-family:"Orbitron";
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+
+
         .container {
             width: 80%;
             margin: 20px auto;
@@ -33,12 +101,12 @@
         h1 {
             color: #ffffff;
             font-family: "Exo 2";
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
         h2 { text-align: center;
             color: #000000;
             font-family: "Exo 2";
-            font-size: 3rem;
+            font-size: 2rem;
         }
         .container h2 {
         display: inline-block;
@@ -50,13 +118,25 @@
         p {
             font-family: "Inter";
             line-height: 1.6;
-            font-size: 2rem;
+            font-size: 1rem;
         }
 
         @media (max-width: 768px) {
-            h1, h2, p {
-                font-size: 1.2rem;
-            }
+           body {
+            font-size:14px;
+           }
+           nav ul li a{
+            font-size: 14px;
+           }
+           h1{
+            font-size:2rem;
+           }
+           h2{
+            font-size:1.5rem;
+           }
+           p{
+            font-size:0.9rem;
+           }
         }
 
         .images {
@@ -83,9 +163,14 @@
 </head>
 <body>
 
-    <header>
-        <h1>About Our Bionic Prosthetic Arm</h1>
-    </header>
+    <nav>
+        <div class="logo">Bionix</div>
+      <ul>
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
 
     <div class="container">
         <h2>Our Mission</h2>

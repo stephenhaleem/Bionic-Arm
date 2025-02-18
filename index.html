@@ -45,10 +45,6 @@
   </section>
 
 <section class="features" id="features">
-  <div class="scroll-indicator">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="21">
-      <path d="M12 2a1 1 0 0 1 1 1v14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 1.414-1.414L11 17.586V3a1 1 0 0 1 1-1z" fill="black"/>
-    </svg>
   </div>
   <div class="features-container">
     <h2 data-aos="fade-down" data-aos-delay="200">Advanced Features</h2>
@@ -194,27 +190,37 @@
   </div>
 </footer>
 
-  <script>
-    window.addEventListener('scroll', () => {
-      const scrollIndicator = document.querySelector('.scroll-indicator');
-      if (window.scrollY > 100) {
-        scrollIndicator.style.opacity = '0';
-        setTimeout(() => {
-          scrollIndicator.style.display = 'none';
-        }, 300);
+<script>
+  document.querySelector('#scroll-arrow').addEventListener('click', () => {
+    const sections = document.querySelectorAll('section');
+    const currentScroll = window.scrollY;
+    let nextSection = null;
+
+    for (let section of sections) {
+      if (section.offsetTop > currentScroll + 50) { // Adding a small offset to ensure we're past the current section
+        nextSection = section;
+        break;
       }
-    });
-    document.querySelector('#scroll-arrow').addEventListener('click', () => {
-      const nextSection = document.querySelector('#features');
+    }
+
+    if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
-    });
-  const scrollIndicator = document.querySelector('.scroll-indicator');
-  if (scrollIndicator) {
-    scrollIndicator.addEventListener('click', () => {
-      window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
-    });
-  }
-  </script>
+    }
+  });
+
+  window.addEventListener('scroll', () => {
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (window.scrollY > 100) {
+      scrollIndicator.style.opacity = '0';
+      setTimeout(() => {
+        scrollIndicator.style.display = 'none';
+      }, 300);
+    } else {
+      scrollIndicator.style.opacity = '1';
+      scrollIndicator.style.display = 'block';
+    }
+  });
+</script>
 <script>
   document.querySelectorAll('nav ul li a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {

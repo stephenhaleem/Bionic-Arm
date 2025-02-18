@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: white;
   padding: 20px 50px;
   position: sticky;
   top: 0;
@@ -58,7 +58,10 @@ nav ul li a:hover {
   background-color: black;
   border-radius: 5px;
 }
-
+html {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: black #f1f1f1; /* Thumb and track color */
+}
 ::-webkit-scrollbar {
   width: 12px; /* Width of the scrollbar */
 }
@@ -103,9 +106,9 @@ nav ul li a:hover {
             color: #ffffff;
             text-align: center;
         }
-        p{  line-height: normal;
+        p{  line-height:normal;
             font-family: "inter";
-            font-size: 1.1rem;
+            font-size: 0.9rem;
         }
         .feature {
             display: flex;
